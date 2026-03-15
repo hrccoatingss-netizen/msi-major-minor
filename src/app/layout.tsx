@@ -1,15 +1,29 @@
 import type { Metadata } from "next";
+import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+const dmSerif = DM_Serif_Display({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-dm-serif",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
-    default: "MSI Major Minor Services - Professional Painting in Little Rock, AR | 26 Years Experience",
+    default: "MSI Major Minor Services | Premium Painting & Property Services in Little Rock, AR",
     template: "%s | MSI Major Minor Services",
   },
   description:
-    "Affordable professional painting services in Little Rock, AR. Interior painting from $85/room, full exterior from $1,200. Cabinet refinishing, drywall repair, deck staining. 26 years experience. Military discount. Call (501) 960-3578.",
+    "Little Rock's trusted painting and property services team. Interior painting from $85/room, full exterior from $1,200. Cabinet refinishing, drywall repair, deck staining. 12+ years experience. Licensed & insured. Military discount. Call (501) 960-3578.",
   keywords: [
     "painting contractor Little Rock AR",
     "interior painting Little Rock",
@@ -19,19 +33,21 @@ export const metadata: Metadata = {
     "deck staining Arkansas",
     "affordable painter Little Rock",
     "property preservation Arkansas",
+    "licensed painter Little Rock",
+    "military discount painting Arkansas",
   ],
   openGraph: {
-    title: "MSI Major Minor Services - Professional Painting in Little Rock, AR",
+    title: "MSI Major Minor Services | Premium Painting in Little Rock, AR",
     description:
-      "Affordable professional painting starting at $85/room. 26 years experience. Military discount available. Serving Little Rock, North Little Rock, Maumelle & Central Arkansas.",
+      "Professional painting starting at $85/room. Licensed & insured with 12+ years experience. Military discount available. Serving Little Rock, North Little Rock, Maumelle & Central Arkansas.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MSI Major Minor Services - Professional Painting in Little Rock, AR",
+    title: "MSI Major Minor Services | Premium Painting in Little Rock, AR",
     description:
-      "Affordable professional painting starting at $85/room. 26 years experience. Military discount available.",
+      "Professional painting starting at $85/room. Licensed & insured. 12+ years experience. Military discount.",
   },
   robots: {
     index: true,
@@ -45,7 +61,7 @@ const localBusinessJsonLd = {
   "@id": "#business",
   name: "MSI Major Minor Services",
   description:
-    "Professional painting and property services in Little Rock, AR. Interior painting, exterior painting, cabinet refinishing, drywall repair, deck staining, and property preservation.",
+    "Premium painting and property services in Little Rock, AR. Interior painting, exterior painting, cabinet refinishing, drywall repair, deck staining, and property preservation. Licensed & insured.",
   telephone: "+1-501-960-3578",
   address: {
     "@type": "PostalAddress",
@@ -64,6 +80,11 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Little Rock, AR" },
     { "@type": "City", name: "North Little Rock, AR" },
     { "@type": "City", name: "Maumelle, AR" },
+    { "@type": "City", name: "Benton, AR" },
+    { "@type": "City", name: "Conway, AR" },
+    { "@type": "City", name: "Cabot, AR" },
+    { "@type": "City", name: "Jacksonville, AR" },
+    { "@type": "City", name: "Sherwood, AR" },
   ],
   foundingDate: "2018",
   paymentAccepted: "Cash, Credit Card, Cryptocurrency",
@@ -71,14 +92,14 @@ const localBusinessJsonLd = {
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    opens: "07:00",
-    closes: "18:00",
+    opens: "08:00",
+    closes: "17:00",
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${dmSerif.variable} ${inter.variable}`}>
       <head>
         <script
           type="application/ld+json"
