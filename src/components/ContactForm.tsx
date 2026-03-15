@@ -5,12 +5,9 @@ import { useState, type FormEvent } from "react";
 const serviceOptions = [
   "Interior Painting",
   "Exterior Painting",
-  "Cabinet Painting & Staining",
-  "Drywall Repair",
-  "Deck Staining",
-  "Lawn Care",
+  "Commercial Painting",
   "Office Cleaning",
-  "Property Preservation",
+  "Lawn Care",
   "Other",
 ];
 
@@ -73,7 +70,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-medium">Location</p>
-                  <p className="text-base font-semibold text-gray-900">10601 Warren Dr, Little Rock, AR 72209</p>
+                  <p className="text-base font-semibold text-gray-900">100 Baseline Rd, Little Rock, AR 72209</p>
                 </div>
               </div>
 

@@ -23,23 +23,23 @@ export const metadata: Metadata = {
     template: "%s | MSI Major Minor Services",
   },
   description:
-    "Little Rock's trusted painting and property services team. Interior painting from $85/room, full exterior from $1,200. Cabinet refinishing, drywall repair, deck staining. 12+ years experience. Licensed & insured. Military discount. Call (501) 960-3578.",
+    "Little Rock's most affordable professional painters. Interior painting from $85/room, full exterior from $1,200. 25+ years experience. Licensed & insured. Military discount. 30% off any 1-story home. Call (501) 960-3578.",
   keywords: [
     "painting contractor Little Rock AR",
     "interior painting Little Rock",
     "exterior painting Arkansas",
-    "cabinet refinishing Little Rock",
-    "drywall repair Little Rock",
-    "deck staining Arkansas",
     "affordable painter Little Rock",
-    "property preservation Arkansas",
+    "house painting Little Rock AR",
+    "commercial painting Little Rock",
+    "lawn care Little Rock AR",
+    "janitorial services Little Rock",
     "licensed painter Little Rock",
     "military discount painting Arkansas",
   ],
   openGraph: {
     title: "MSI Major Minor Services | Premium Painting in Little Rock, AR",
     description:
-      "Professional painting starting at $85/room. Licensed & insured with 12+ years experience. Military discount available. Serving Little Rock, North Little Rock, Maumelle & Central Arkansas.",
+      "Professional painting starting at $85/room. Licensed & insured with 25+ years experience. 30% off any 1-story home. Military discount available. Serving Little Rock & Central Arkansas.",
     type: "website",
     locale: "en_US",
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MSI Major Minor Services | Premium Painting in Little Rock, AR",
     description:
-      "Professional painting starting at $85/room. Licensed & insured. 12+ years experience. Military discount.",
+      "Professional painting starting at $85/room. Licensed & insured. 25+ years experience. 30% off any 1-story home.",
   },
   robots: {
     index: true,
@@ -61,11 +61,11 @@ const localBusinessJsonLd = {
   "@id": "#business",
   name: "MSI Major Minor Services",
   description:
-    "Premium painting and property services in Little Rock, AR. Interior painting, exterior painting, cabinet refinishing, drywall repair, deck staining, and property preservation. Licensed & insured.",
+    "Little Rock's most affordable professional painters. Interior painting, exterior painting, commercial painting, lawn care, and janitorial services. 25+ years experience. Licensed & insured.",
   telephone: "+1-501-960-3578",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "10601 Warren Dr",
+    streetAddress: "100 Baseline Rd",
     addressLocality: "Little Rock",
     addressRegion: "AR",
     postalCode: "72209",
@@ -86,7 +86,7 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Jacksonville, AR" },
     { "@type": "City", name: "Sherwood, AR" },
   ],
-  foundingDate: "2018",
+  foundingDate: "2000",
   paymentAccepted: "Cash, Credit Card, Cryptocurrency",
   priceRange: "$$",
   openingHoursSpecification: {

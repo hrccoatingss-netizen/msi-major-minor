@@ -180,3 +180,21 @@ body {
   height: 4px;
   background: linear-gradient(90deg, #E07B3C, #F5A623);
 }
+
+/* Gallery image zoom */
+.gallery-zoom {
+  transition: transform 0.7s ease;
+}
+.gallery-zoom:hover {
+  transform: scale(1.1);
+}
+
+/* Smooth image loading */
+img {
+  image-rendering: auto;
+}
+
+/* Service card image overlay */
+.service-card-overlay {
+  background: linear-gradient(to top, rgba(15, 34, 64, 0.9), rgba(15, 34, 64, 0.4), transparent);
+}

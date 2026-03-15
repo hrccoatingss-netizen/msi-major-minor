@@ -6,10 +6,9 @@ import Link from "next/link";
 const services = [
   { name: "Interior Painting", href: "/services/interior-painting" },
   { name: "Exterior Painting", href: "/services/exterior-painting" },
-  { name: "Cabinet Painting & Staining", href: "/services/cabinet-refinishing" },
-  { name: "Drywall Repair", href: "/services/drywall-repair" },
-  { name: "Deck Staining", href: "/services/deck-staining" },
-  { name: "Property Preservation", href: "/services/property-preservation" },
+  { name: "Commercial Painting", href: "/services/commercial-painting" },
+  { name: "Office Cleaning", href: "/services/office-cleaning" },
+  { name: "Lawn Care", href: "/services/lawn-care" },
 ];
 
 export default function Header() {
